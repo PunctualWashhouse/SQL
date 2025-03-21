@@ -59,6 +59,7 @@ ALTER COLUMN contact_name TYPE TEXT
 ALTER TABLE job_applied
 DROP COLUMN contact_name;
 
+-- Itt sok minden nincs meg sajnos
 ____________________________________________________
 CREATE TABLE january_jobs AS
     SELECT *
@@ -178,7 +179,7 @@ FROM remote_job_skills
 INNER JOIN skills_dim AS skills ON skills.skill_id = remote_job_skills.skill_id
 ORDER BY
     skill_count DESC
--- LIMIT 5
+LIMIT 5
 
 ____________________________________________________
 -- UNION & UNION ALL queries --
@@ -238,4 +239,5 @@ ORDER BY
 
 ____________________________________________________
 -- PROJECT SECTION (2:58:25) --
-Másik .sql fájlban.
+
+-- In other .sql files.
